@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>CAP</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{dd5752f1-569f-4597-912d-37185570c491}</ProjectGuid>
+    <Name>SalesQuotation_CAP</Name>
+    <RootNamespace>SalesQuotation_CAP</RootNamespace>
+    <StartupObject>Line_DisplayMenu</StartupObject>
+    <StartupType>MenuItemDisplay</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Base Enums\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Integers\" />
+    <Folder Include="EDT Reals\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Simple Queries\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxEdt\Color_String">
+      <SubType>Content</SubType>
+      <Name>Color_String</Name>
+      <Link>EDT Strings\Color_String</Link>
+    </Content>
+    <Content Include="AxEdt\Config_String">
+      <SubType>Content</SubType>
+      <Name>Config_String</Name>
+      <Link>EDT Strings\Config_String</Link>
+    </Content>
+    <Content Include="AxEdt\Customer_ID">
+      <SubType>Content</SubType>
+      <Name>Customer_ID</Name>
+      <Link>EDT Strings\Customer_ID</Link>
+    </Content>
+    <Content Include="AxEdt\Customer_Name">
+      <SubType>Content</SubType>
+      <Name>Customer_Name</Name>
+      <Link>EDT Strings\Customer_Name</Link>
+    </Content>
+    <Content Include="AxEdt\Discount">
+      <SubType>Content</SubType>
+      <Name>Discount</Name>
+      <Link>EDT Integers\Discount</Link>
+    </Content>
+    <Content Include="AxEdt\Item_ID">
+      <SubType>Content</SubType>
+      <Name>Item_ID</Name>
+      <Link>EDT Strings\Item_ID</Link>
+    </Content>
+    <Content Include="AxEdt\Item_Name">
+      <SubType>Content</SubType>
+      <Name>Item_Name</Name>
+      <Link>EDT Strings\Item_Name</Link>
+    </Content>
+    <Content Include="AxEdt\Line_Amount">
+      <SubType>Content</SubType>
+      <Name>Line_Amount</Name>
+      <Link>EDT Strings\Line_Amount</Link>
+    </Content>
+    <Content Include="AxEdt\Qty_Real">
+      <SubType>Content</SubType>
+      <Name>Qty_Real</Name>
+      <Link>EDT Reals\Qty_Real</Link>
+    </Content>
+    <Content Include="AxEdt\Quotation_ID">
+      <SubType>Content</SubType>
+      <Name>Quotation_ID</Name>
+      <Link>EDT Strings\Quotation_ID</Link>
+    </Content>
+    <Content Include="AxEdt\Site_String">
+      <SubType>Content</SubType>
+      <Name>Site_String</Name>
+      <Link>EDT Strings\Site_String</Link>
+    </Content>
+    <Content Include="AxEdt\Size_String">
+      <SubType>Content</SubType>
+      <Name>Size_String</Name>
+      <Link>EDT Strings\Size_String</Link>
+    </Content>
+    <Content Include="AxEdt\Unit_Price">
+      <SubType>Content</SubType>
+      <Name>Unit_Price</Name>
+      <Link>EDT Reals\Unit_Price</Link>
+    </Content>
+    <Content Include="AxEdt\Warehouse_String">
+      <SubType>Content</SubType>
+      <Name>Warehouse_String</Name>
+      <Link>EDT Strings\Warehouse_String</Link>
+    </Content>
+    <Content Include="AxEnum\Quotation_Status">
+      <SubType>Content</SubType>
+      <Name>Quotation_Status</Name>
+      <Link>Base Enums\Quotation_Status</Link>
+    </Content>
+    <Content Include="AxForm\Header_Form">
+      <SubType>Content</SubType>
+      <Name>Header_Form</Name>
+      <Link>Forms\Header_Form</Link>
+    </Content>
+    <Content Include="AxForm\Line_Form">
+      <SubType>Content</SubType>
+      <Name>Line_Form</Name>
+      <Link>Forms\Line_Form</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\Line_DisplayMenu">
+      <SubType>Content</SubType>
+      <Name>Line_DisplayMenu</Name>
+      <Link>Display Menu Items\Line_DisplayMenu</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\Line_MenuItem">
+      <SubType>Content</SubType>
+      <Name>Line_MenuItem</Name>
+      <Link>Display Menu Items\Line_MenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\SalesQuotation_OutputMenu">
+      <SubType>Content</SubType>
+      <Name>SalesQuotation_OutputMenu</Name>
+      <Link>Output Menu Items\SalesQuotation_OutputMenu</Link>
+    </Content>
+    <Content Include="AxQuery\SalesQuotation_Query">
+      <SubType>Content</SubType>
+      <Name>SalesQuotation_Query</Name>
+      <Link>Simple Queries\SalesQuotation_Query</Link>
+    </Content>
+    <Content Include="AxReport\SalesQuotation_Report">
+      <SubType>Content</SubType>
+      <Name>SalesQuotation_Report</Name>
+      <Link>Reports\SalesQuotation_Report</Link>
+    </Content>
+    <Content Include="AxTable\QuotationHeader_Table">
+      <SubType>Content</SubType>
+      <Name>QuotationHeader_Table</Name>
+      <Link>Tables\QuotationHeader_Table</Link>
+    </Content>
+    <Content Include="AxTable\QuotationLine_Table">
+      <SubType>Content</SubType>
+      <Name>QuotationLine_Table</Name>
+      <Link>Tables\QuotationLine_Table</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

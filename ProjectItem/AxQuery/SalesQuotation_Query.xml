@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxQuery xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns=""
+	i:type="AxQuerySimple">
+	<Name>SalesQuotation_Query</Name>
+	<SourceCode>
+		<Methods>
+			<Method>
+				<Name>classDeclaration</Name>
+				<Source><![CDATA[
+[Query]
+public class SalesQuotation_Query extends QueryRun
+{
+}
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+	<Title>SalesQuotation_Query</Title>
+	<DataSources>
+		<AxQuerySimpleRootDataSource>
+			<Name>QuotationHeader_Table</Name>
+			<DynamicFields>Yes</DynamicFields>
+			<Table>QuotationHeader_Table</Table>
+			<DataSources />
+			<DerivedDataSources />
+			<Fields />
+			<Ranges />
+			<GroupBy />
+			<Having />
+			<OrderBy />
+		</AxQuerySimpleRootDataSource>
+	</DataSources>
+</AxQuery>

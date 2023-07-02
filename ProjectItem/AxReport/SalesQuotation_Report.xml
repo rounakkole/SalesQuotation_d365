@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxReport xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="Microsoft.Dynamics.AX.Metadata.V2">
+	<Name>SalesQuotation_Report</Name>
+	<DataMethods />
+	<DataSets>
+		<AxReportDataSet xmlns="">
+			<Name>SalesQuotation_Query</Name>
+			<DynamicFilters>false</DynamicFilters>
+			<Query>SELECT * FROM SalesQuotation_Query</Query>
+			<FieldGroups />
+			<Fields>
+				<AxReportDataSetField>
+					<Name>Quotation_ID</Name>
+					<Alias>QuotationHeader_Table.1.Quotation_ID</Alias>
+					<Caption>Quotation ID</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Customer_ID</Name>
+					<Alias>QuotationHeader_Table.1.Customer_ID</Alias>
+					<Caption>Customer ID</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Customer_Name</Name>
+					<Alias>QuotationHeader_Table.1.Customer_Name</Alias>
+					<Caption>Customer Name</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Quotation_StatusName</Name>
+					<Alias>QuotationHeader_Table.1.Quotation_Status:NAME(Quotation_Status)</Alias>
+					<Caption>Quotation Status</Caption>
+					<DisableAutoCreateInDataRegion>true</DisableAutoCreateInDataRegion>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Quotation_StatusLabel</Name>
+					<Alias>QuotationHeader_Table.1.Quotation_Status:LABEL(Quotation_Status)</Alias>
+					<Caption>Quotation Status</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>dataAreaId</Name>
+					<Alias>QuotationHeader_Table.1.dataAreaId</Alias>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>recVersion</Name>
+					<Alias>QuotationHeader_Table.1.recVersion</Alias>
+					<DataType>System.Int32</DataType>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Partition</Name>
+					<Alias>QuotationHeader_Table.1.Partition</Alias>
+					<DataType>System.Int64</DataType>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>RecId</Name>
+					<Alias>QuotationHeader_Table.1.RecId</Alias>
+					<DataType>System.Int64</DataType>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+			</Fields>
+			<Parameters>
+				<AxReportDataSetParameter>
+					<Name>AX_PartitionKey</Name>
+					<Alias>AX_PartitionKey</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_PartitionKey</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_CompanyName</Name>
+					<Alias>AX_CompanyName</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_CompanyName</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_UserContext</Name>
+					<Alias>AX_UserContext</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_UserContext</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_RenderingCulture</Name>
+					<Alias>AX_RenderingCulture</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_RenderingCulture</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_ReportContext</Name>
+					<Alias>AX_ReportContext</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_ReportContext</Parameter>
+				</AxReportDataSetParameter>
+			</Parameters>
+		</AxReportDataSet>
+	</DataSets>
+	<DefaultParameterGroup>
+		<Name xmlns="">Parameters</Name>
+		<ReportParameterBases xmlns="">
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_PartitionKey</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_CompanyName</Name>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_UserContext</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_RenderingCulture</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_ReportContext</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+		</ReportParameterBases>
+	</DefaultParameterGroup>
+	<Designs>
+		<AxReportDesign xmlns=""
+			i:type="AxReportAutoDesign">
+			<Name>AutoDesign1</Name>
+			<LayoutTemplate>ReportLayoutStyleTemplate</LayoutTemplate>
+			<Title>Sales Quotation Report</Title>
+			<TitleOverridden>true</TitleOverridden>
+			<DataRegions>
+				<AxReportDataRegion xmlns=""
+					i:type="AxReportTable">
+					<Name>SalesQuotation_QueryTable1</Name>
+					<DataSet>SalesQuotation_Query</DataSet>
+					<Filters />
+					<StyleTemplate>TableStyleAlternatingRowsTemplate</StyleTemplate>
+					<Data>
+						<Name>Data</Name>
+						<DetailData>
+							<AxReportItem xmlns=""
+								i:type="AxReportTableDetailData">
+								<Name>Quotation_ID</Name>
+								<Caption>Quotation ID</Caption>
+								<Expression>=Fields!Quotation_ID.Value</Expression>
+								<Padding />
+								<Style>
+									<BorderColor />
+									<BorderStyle />
+									<BorderWidth />
+									<Font />
+									<Padding />
+								</Style>
+								<DisplayWidth>Auto</DisplayWidth>
+								<Aggregation>
+									<GrandTotalStyle>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</GrandTotalStyle>
+								</Aggregation>
+								<DrillthroughAction>
+									<Style>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</Style>
+								</DrillthroughAction>
+							</AxReportItem>
+							<AxReportItem xmlns=""
+								i:type="AxReportTableDetailData">
+								<Name>Customer_ID</Name>
+								<Caption>Customer ID</Caption>
+								<Expression>=Fields!Customer_ID.Value</Expression>
+								<Padding />
+								<Style>
+									<BorderColor />
+									<BorderStyle />
+									<BorderWidth />
+									<Font />
+									<Padding />
+								</Style>
+								<DisplayWidth>Auto</DisplayWidth>
+								<Aggregation>
+									<GrandTotalStyle>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</GrandTotalStyle>
+								</Aggregation>
+								<DrillthroughAction>
+									<Style>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</Style>
+								</DrillthroughAction>
+							</AxReportItem>
+							<AxReportItem xmlns=""
+								i:type="AxReportTableDetailData">
+								<Name>Customer_Name</Name>
+								<Caption>Customer Name</Caption>
+								<Expression>=Fields!Customer_Name.Value</Expression>
+								<Padding />
+								<Style>
+									<BorderColor />
+									<BorderStyle />
+									<BorderWidth />
+									<Font />
+									<Padding />
+								</Style>
+								<DisplayWidth>Auto</DisplayWidth>
+								<Aggregation>
+									<GrandTotalStyle>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</GrandTotalStyle>
+								</Aggregation>
+								<DrillthroughAction>
+									<Style>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</Style>
+								</DrillthroughAction>
+							</AxReportItem>
+							<AxReportItem xmlns=""
+								i:type="AxReportTableDetailData">
+								<Name>Quotation_StatusLabel</Name>
+								<Caption>Quotation Status</Caption>
+								<Expression>=Fields!Quotation_StatusLabel.Value</Expression>
+								<Padding />
+								<Style>
+									<BorderColor />
+									<BorderStyle />
+									<BorderWidth />
+									<Font />
+									<Padding />
+								</Style>
+								<DisplayWidth>Auto</DisplayWidth>
+								<Aggregation>
+									<GrandTotalStyle>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</GrandTotalStyle>
+								</Aggregation>
+								<DrillthroughAction>
+									<Style>
+										<BorderColor />
+										<BorderStyle />
+										<BorderWidth />
+										<Font />
+										<Padding />
+									</Style>
+								</DrillthroughAction>
+							</AxReportItem>
+						</DetailData>
+					</Data>
+					<Groupings />
+					<Sorting>
+						<AxReportSort>
+							<Name>Quotation_ID</Name>
+							<Expression>=Fields!Quotation_ID.Value</Expression>
+						</AxReportSort>
+					</Sorting>
+				</AxReportDataRegion>
+			</DataRegions>
+			<DisableIndividualTransformation />
+			<InteractiveSize>
+				<Height>11in</Height>
+				<Width>8.5in</Width>
+			</InteractiveSize>
+			<Margin>
+				<Bottom>.5in</Bottom>
+				<Left>.5in</Left>
+				<Right>.5in</Right>
+				<Top>.5in</Top>
+			</Margin>
+			<PageSize>
+				<Height>11in</Height>
+				<Width>8.5in</Width>
+			</PageSize>
+			<SizeToFit />
+		</AxReportDesign>
+	</Designs>
+	<EmbeddedImages />
+</AxReport>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxEnum xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>Quotation_Status</Name>
+	<Label>Quotation Status</Label>
+	<UseEnumValue>No</UseEnumValue>
+	<EnumValues>
+		<AxEnumValue>
+			<Name>BaseEnumValue1</Name>
+			<Label>Created</Label>
+		</AxEnumValue>
+		<AxEnumValue>
+			<Name>BaseEnumValue2</Name>
+			<Label>Canceled</Label>
+			<Value>1</Value>
+		</AxEnumValue>
+		<AxEnumValue>
+			<Name>BaseEnumValue3</Name>
+			<Label>Ended</Label>
+			<Value>2</Value>
+		</AxEnumValue>
+		<AxEnumValue>
+			<Name>BaseEnumValue4</Name>
+			<Label>Confirmed</Label>
+			<Value>3</Value>
+		</AxEnumValue>
+	</EnumValues>
+	<IsExtensible>true</IsExtensible>
+</AxEnum>
